@@ -8,29 +8,15 @@ import 'package:login/views/login_view.dart';
 import 'package:login/widgets/custom_text.dart';
 import 'package:login/widgets/custom_textfield.dart';
 
-void main(
-  List<String> args,
-) {
+void main(List<String> args) {
   runApp(App());
 }
 
-class App
-    extends
-        StatelessWidget {
-  const App({
-    super.key,
-  });
+class App extends StatelessWidget {
+  const App({super.key});
 
   @override
-  Widget build(
-    BuildContext
-    context,
-  ) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: LoginView(),
-    );
+  Widget build(BuildContext context) {
+    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginView());
   }
 }
-
-
